@@ -18,7 +18,7 @@ mongoose.set('strictQuery', true);
 
 // This adds data to req.body so we can access it in the CREATE action
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: true }));
 app.use(express.static("public"));
 
 // Middleware
