@@ -2,6 +2,17 @@ const express = require('express')
 const router = express.Router()
 const Meditation = require("../models/meditations.js")
 
+// custom middleware to require authentication on routes 
+const authRequired = (req, res, next) => {
+	console.log(req.session.currentUser)
+	if (req.session.currentUser) {
+		next() 
+	} else {
+		res.send('Please log in to edit the page')
+
+	}
+}
+
 
 // ROUTES
 
@@ -9,6 +20,7 @@ const Meditation = require("../models/meditations.js")
 router.get("/new", (req,res) => {
     res.render("new.ejs")
 })
+
 
 
 // create
@@ -57,7 +69,7 @@ router.get("/:id", (req, res) => {
 
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', authRequired, (req, res) => {
 	Meditation.findByIdAndDelete(req.params.id, (err, deletedMeditation) => {
 		if(err) {
 			console.log(err)
@@ -71,7 +83,7 @@ router.delete('/:id', (req, res) => {
 
 
 // edit
-router.get("/:id/edit", (req, res) => {
+router.get("/:id/edit", authRequired, (req, res) => {
 	Meditation.findById(req.params.id, (err, foundMeditation) => {
 		if(err) {
 			console.log(err)
