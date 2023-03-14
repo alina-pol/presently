@@ -16,10 +16,10 @@ router.get("/", (req, res)=> {
 
 })
 
-// // new
-// router.get('/new', (req,res) => {
-//     res.render('new.ejs')
-// })
+// new
+router.get('/new', (req,res) => {
+    res.render('new.ejs')
+})
 
 // // delete
 // router.delete("/:id", (req, res) => {
@@ -31,18 +31,18 @@ router.get("/", (req, res)=> {
 
 // //update
 
-// // create
-// router.post('/', (req, res) => {
-//     Product.create(req.body, (err, createdMeditation) => {
-//         if (err) {
-//             console.log(err);
-//             res.send(err);
-//         }
-//         else {
-//             res.redirect('/meditations');
-//         }
-//     });
-// });
+// create
+router.post('/', (req, res) => {
+    Meditation.create(req.body, (err, createdMeditation) => {
+        if (err) {
+            console.log(err);
+            res.send(err);
+        }
+        else {
+            res.redirect('/meditations');
+        }
+    });
+});
 
 // // edit
 
