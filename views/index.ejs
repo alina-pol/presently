@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Presently</title>
+</head>
+<body>
+    <nav>
+        <a href="/meditations/new">Add a new meditation</a>
+    </nav>
+    <h1>Meditations</h1>
+ 
+    <ul>
+        
+        <div class="container">
+        <% for(let i=0; i < meditations.length; i++) { %>
+            <div id="list">
+            <li>
+                <%=meditations[i].name; %>
+                <br><br>
+                <a href="/meditations/<%=i %>"><img src="<%= meditations[i].img%>"></a>
+            </div>
+            </li>
+            <% } %>
+        </div>
+        </ul>
+</body>
+</html>

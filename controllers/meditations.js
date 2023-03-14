@@ -4,16 +4,15 @@ const Meditation = require("../models/meditations.js")
 
 // index
 router.get("/", (req, res)=> {
-    res.send("welcome")
-    // Meditation.find({}, (err, foundMeditation) => {
-    //     if (err) {
-    //         console.log(err);
-    //         res.send(err);
-    //     }
-    // res.render("index.ejs", {
-    //     products: foundMeditation
-    // })
-    // })
+    Meditation.find({}, (err, foundMeditation) => {
+        if (err) {
+            console.log(err);
+            res.send(err);
+        }
+    res.render("index.ejs", {
+        meditations: foundMeditation
+    })
+    })
 
 })
 

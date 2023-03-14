@@ -4,7 +4,7 @@ require('dotenv').config()
 const mongoose = require('mongoose');
 const appController = require('./controllers/meditations.js')
 const methodOverride = require('method-override')
-const Product = require("./models/meditations.js")
+const Meditation = require("./models/meditations.js")
 
 // Mongo error/success
 const db = mongoose.connection
