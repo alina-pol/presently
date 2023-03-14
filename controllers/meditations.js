@@ -21,13 +21,17 @@ router.get('/new', (req,res) => {
     res.render('new.ejs')
 })
 
-// // delete
-// router.delete("/:id", (req, res) => {
-//     Product.findByIdAndRemove(req.params.id, (err, deletedMeditation) => {
-//         console.log(deletedMeditation)
-//         res.redirect("/meditations")
-//     })
-// });
+// delete
+router.delete("/:id", (req, res) => {
+    Meditation.findByIdAndRemove(req.params.id, (err, deletedMeditation) => {
+        if (err) {
+            console.log(err);
+            res.send(err);
+        }
+        console.log(deletedMeditation)
+        res.redirect("/meditations")
+    })
+});
 
 // //update
 
@@ -46,11 +50,23 @@ router.post('/', (req, res) => {
 });
 
 // edit
+router.get('/:id/edit', (req, res) => {
+	Meditation.findById(req.params.id, (err, foundMeditation) => {
+		if(err) {
+			console.log(err)
+			res.send(err)
+		} else {
+			res.render('edit.ejs', {
+				meditation: foundMeditation
+			})
+		}
+	})
+})
 
 
 // show
-router.get('/:_id', (req, res) => {
-	Meditation.findById(req.params._id, (err, foundMeditation) => {
+router.get('/:id', (req, res) => {
+	Meditation.findById(req.params.id, (err, foundMeditation) => {
         if (err) {
             console.log(err);
             res.send(err);
