@@ -57,12 +57,18 @@ router.get("/:id", (req, res) => {
 
 
 
-// delete
-router.delete("/:id", (req, res) => {
-    Meditation.findByIdAndDelete(req.params.id, (err, data) => {
-        res.redirect("/meditations")
-    })
-});
+router.delete('/:id', (req, res) => {
+	Meditation.findByIdAndDelete(req.params.id, (err, deletedMeditation) => {
+		if(err) {
+			console.log(err)
+			res.send(err)
+		} else {
+			console.log(deletedMeditation)
+			res.redirect('/meditations')
+		}
+	})
+})
+
 
 // edit
 router.get("/:id/edit", (req, res) => {
@@ -82,7 +88,7 @@ router.get("/:id/edit", (req, res) => {
 //update
 router.put('/:id', (req, res)=>{
     //{new: true} tells mongoose to send the updated model into the callback
-    Fruit.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedModel)=>{
+    Meditation.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedMeditation)=>{
         res.redirect('/meditations')
     })
 })
