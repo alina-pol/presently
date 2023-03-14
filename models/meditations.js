@@ -3,9 +3,9 @@ const mongoose = require('mongoose')
 
 const meditationSchema = new mongoose.Schema({ 
     name: {type: String, required: true}, 
-    description: String, 
-    img: String, 
-    duration: Number
+    description: {type: String}, 
+    img: {type: String}, 
+    duration: {type: Number}
     
 })
 

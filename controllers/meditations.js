@@ -39,16 +39,29 @@ router.post('/', (req, res) => {
             res.send(err);
         }
         else {
+            console.log(createdMeditation, 'Created Meditation')
             res.redirect('/meditations');
         }
     });
 });
 
-// // edit
+// edit
 
 
-
-
+// show
+router.get('/:_id', (req, res) => {
+	Meditation.findById(req.params._id, (err, foundMeditation) => {
+        if (err) {
+            console.log(err);
+            res.send(err);
+        } 
+		res.render('show.ejs', {
+			meditation: foundMeditation
+        
+		})
+    
+	})
+})
 
 
 module.exports = router
