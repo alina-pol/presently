@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Righteous');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=IBM+Plex+Sans+Condensed:wght@100&display=swap');
 img{
     box-shadow : 100ch;
     border-radius: 10%;
-    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 15px 30px rgba(120, 119, 119, 0.3);
     margin-bottom: 4%;
     max-width: 100px;
     max-height: 100px;
 }
 body{
-    background-color: rgb(244, 156, 116);
-    font-family: 'Comfortaa', cursive;
+    background-color: rgb(149, 147, 147);
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 .container{
     max-width: 80%;
@@ -36,6 +35,12 @@ ul{
 }
 h1{
     text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Fjalla One', sans-serif;
+
+}
+a{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 .container-show{
@@ -51,3 +56,92 @@ h1{
     margin: 10% 25% 10% 25%;
 }
 
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+/* a setting for smartphones, so video is not displayed */
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://presentlyvideos.s3.us-east-2.amazonaws.com/leaves.jpeg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEC0aCXVzLXdlc3QtMSJHMEUCIGYWDKr0Py%2BHSyGeUlmeMYrcM06HAokMlsKAO7z8RDoTAiEAwWdZHgFNgn%2BKtI0UUpWwvzoCASyFcTOXWZYtPVsfh%2F4q7QII5v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw0OTEyNjM4MzM4NjIiDMyP%2B%2B%2Fyxfo014yl8SrBAhE9D5Q%2F87%2Bji6TmJ4E4r4o6HR%2FyyZHKD0xJ778IWqcqgzrg2qgJ%2BDt5%2BJZXtGxNI%2FGP3r5TOYPJcFv98vs4SxNi4P3jAFzAT7%2FVsIVrBFsXIg5y0WRh9tDsmL5yoY4rGT%2Fo3OJEuI2hl59MDiKY%2B1nOSWNodG%2FuiKcX35gp3z8gnK5%2Bpow8520YZSInVMnl6wHBNoBCxjfDge5fPEf4nGh6vQEd%2BPxlRFQ8XSTHExsPPsLS%2FfncJjs81IMws648NtokXiHxJ07rmK7k31fmwDCJ8xW6RbZcAGzPsofeF6J%2B9pADiEJfJhMMaqjX5VI5N41u%2FkWNVOFpN5nwTLhaRKugvbVphMrFkv2HouwXylwuA9nbyySTLunhNeoqzKOIKJg8WIZWWKdwaGoBHXnTIMnqbmfglpttalgh4WeF7ebE%2FTDNm8WgBjqzAsUba01tZ88SO6adyf5UHJlZSkzMCScG8VZJyp4OBxRuetYN62v3dAPKwxTDdkZ9HwgeVP5n2B549fqry2AGqPQWAY6eiagAJXM60bph1VESypZbVQ8nLXLZj0tmqmeaCHAFTVD6WBQ1YunTMC7UodfqZ%2B6U0JDFmok%2B6aw2UIoRv43aOetE0J5PEMN%2B8rBQ70Bhsq%2B1Sb2Dk7iCQ5vfXpDpXUutEbaX9ClQt%2FTziPp3pRjJDie9lQb%2B2jRBhiHX8DtGqdihgjcv7npgn2dA6WNKXFRaPJT8gY2S04agkRtn29PT783oXM125f%2BYEL96BWpwjldrQ7%2FqEaqy3vi8RB8ySB2Ol1SjRvNgvg0nqEsc2FrF7noggXPW4joW5aCKTa9zO6LoSskn%2FaXnVIFUJqzy56Y%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230315T051633Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAXEYM3G4DFNFHSAAZ%2F20230315%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=2b32806ab89ef8ca1c89ae20189b0aeab7caca30100b95b3c5d66cf80afed7cc") no-repeat;
+      background-size: cover;
+    }
+}
+
+/* buttons */
+
+
+
+/* CSS */
+a {
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  color: #fcfcfc;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  fill: rgb(0, 0, 0);
+}
+
+.button-59:active {
+  border-color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  fill: rgb(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
+
+/* welcome page */
+
+#welcome-container{
+    font-size: xx-large;
+    display: flex;
+    flex-flow: row ; 
+    align-items: center;
+    align-content: center;
+}
+.welcome-btn{
+    opacity: 80%;
+    gap: 15px;
+}
