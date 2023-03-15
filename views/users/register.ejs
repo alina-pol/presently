@@ -7,27 +7,29 @@
   </head>
   <body>
     <h1 class="reg-headers" >Sign up</h1>
-
+    <div class="reg-container">
+      <div class="sidebar" id="registration">
     <nav>
         <a href="/users" class="close" tabindex="0" role="button">close</a>
     </nav>
-    <div class="reg-container">
+    <div class="registration">
       <form action="/users/register" method="POST">
         <fieldset>
           <legend>SIGN UP</legend>
         <!-- username -->
         <label for="username">USERNAME:</label>
-        <input type="text" name="username" autocomplete="off" placeholder="NAME">
-
+        <input type="text" name="username" autocomplete="off" placeholder="NAME"><br><br>
         <!-- email -->
           <label for="email">E-MAIL:</label>
-          <input type="email" name="email" autocomplete="off" placeholder="E-MAIL">
+          <input type="email" name="email" autocomplete="off" placeholder="E-MAIL"><br><br>
           <!-- password -->
           <label for="password">PASSWORD:</label>
-          <input type="password" name="password" autocomplete="off" placeholder="PASSWORD">
+          <input type="password" name="password" autocomplete="off" placeholder="PASSWORD"><br><br><br><br>
         </fieldset>
-        <input class="signin-btn" type="submit" value="SUBMIT">
+        <input type="submit" value="SUBMIT">
         </form>
+      </div>
+      </div>
       </div>
     </form>
   </body>
