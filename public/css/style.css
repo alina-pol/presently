@@ -8,7 +8,7 @@ img{
     max-height: 100px;
 }
 body{
-    background-color: rgb(149, 147, 147);
+    background-color: rgb(0, 0, 0);
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 .container{
@@ -37,8 +37,9 @@ h1{
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: 'Fjalla One', sans-serif;
-    font-weight:500;
-    font-size: 80px;
+    font-weight: 300;
+    font-size: 110px
+    /* font-size: 6.9vw; */
 
 }
 a{
@@ -84,7 +85,7 @@ a{
 
 
 /* CSS */
-a {
+a, .signin-btn {
   align-items: center;
   background-color: rgb(0, 0, 0);
   border: 2px solid #000000;
@@ -95,10 +96,10 @@ a {
   fill: #000;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 800;
   height: 48px;
   justify-content: center;
-  letter-spacing: -.8px;
+  letter-spacing: -.1px;
   line-height: 24px;
   min-width: 140px;
   outline: 0;
@@ -111,17 +112,18 @@ a {
   touch-action: manipulation;
 }
 
-.button:focus {
+a:focus {
   color: #171e29;
 }
 
-.button-59:hover {
-  border-color: rgb(0, 0, 0);
+a:hover {
+  border-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  fill: rgb(0, 0, 0);
+  fill: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
-.button-59:active {
+a:active {
   border-color:rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   fill: rgb(0, 0, 0);
@@ -142,17 +144,144 @@ a {
     align-content: center;
     gap: 10px;
     justify-content: center;
-    margin-top: 12%;
+    margin-top: 11%;
 
 }
 .welcome-btns{
     opacity: 80%;
     display: flex;
     gap: 10px;
-    margin-top: -10px
+    margin-top: -20px;
+    align-self: center;
+    
 }
 #welcome-page{
   display: flex;
   align-self: center;
   /* background-color: rgba(250, 250, 250, 0.4) */
+}
+
+
+
+
+/* sign in & register pages */
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+legend {
+  padding: 0px 10px;
+  font-family: 'Oswald';
+  font-weight: 500;
+}
+label {
+  font-family: 'Oswald';
+  font-weight: 200;
+  display: block;
+  max-width: 100%;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background: var(--bright-orange);
+  box-shadow: 2px 2px var(--light-green);
+  font-family: 'Oswald';
+  font-size: 1.3em;
+  color: whitesmoke;
+  border: 0px;
+  transition: 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+
+    border-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    fill: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+
+  
+}
+/* using resize none to make sure the textarea always stays a specific width/height */
+textarea {
+  width: 200px;
+  height: 100px;
+  resize: none;
+}
+
+textarea {
+  resize: none;
+  height: 75px;
+}
+
+.reg-headers{
+  color: white;
+  font-size: 80px;
+}
+
+.reg-container{
+
+  color: white;
+
+  width: 85vw;
+  height: 45vw;
+  margin: 50px auto;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #8c8c8c,
+              -1px -1px 80px #333333,
+              1px -1px 10px #8d8d8d,
+              -1px 1px 10px #4c4c4c;
+
+}
+.registration {
+  width: 100%;
+  border-radius: 0 10px 10px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: auto;
+  margin-left:-600px;
+
+}
+
+
+/* close button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 10px;
+  height: 50px;
+  font-size: 0;
+}
+.close:before, 
+.close:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 20px;
+  background-color: #F0F0F0;
+  transform: rotate(45deg) translate(-50%, -50%);
+  transform-origin: top left;
+  content: '';
+}
+.close:after {
+  transform: rotate(-45deg) translate(-50%, -50%);
+}
+.close:before, 
+.close:after {
+    width: 1px;
+}
+/* images on sign in & sign up pages */
+
+.sidebar {
+  margin-left: 630px;
+  width: 100%;
+  background: url('https://presentlyvideos.s3.us-east-2.amazonaws.com/signin.jpg');
+  background-size:100%;
+  background-repeat: no-repeat;
+  border-radius: 0 10px 10px 0;
 }

@@ -6,25 +6,29 @@
     <title>Register Account</title>
   </head>
   <body>
-    <h1>Sign up</h1>
+    <h1 class="reg-headers" >Sign up</h1>
 
     <nav>
-        <a href="/users">Back</a>
+        <a href="/users" class="close" tabindex="0" role="button">close</a>
     </nav>
-    <form action="/users/register" method="POST">
-      <fieldset>
-        <label for="username">USERNAME:</label>
-        <input type="text" name="username" autocomplete="off">
-      </fieldset>
-      <fieldset>
-          <label for="email">E-MAIL:</label>
-          <input type="email" name="email" autocomplete="off">
-        </fieldset>
+    <div class="reg-container">
+      <form action="/users/register" method="POST">
         <fieldset>
+          <legend>SIGN UP</legend>
+        <!-- username -->
+        <label for="username">USERNAME:</label>
+        <input type="text" name="username" autocomplete="off" placeholder="NAME">
+
+        <!-- email -->
+          <label for="email">E-MAIL:</label>
+          <input type="email" name="email" autocomplete="off" placeholder="E-MAIL">
+          <!-- password -->
           <label for="password">PASSWORD:</label>
-          <input type="password" name="password" autocomplete="off">
+          <input type="password" name="password" autocomplete="off" placeholder="PASSWORD">
         </fieldset>
-          <input type="submit" value="Sign Up">
+        <input class="signin-btn" type="submit" value="SUBMIT">
+        </form>
+      </div>
     </form>
   </body>
 </html>

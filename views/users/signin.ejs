@@ -6,22 +6,27 @@
     <title>Sign in</title>
   </head>
   <body>
-    <h1>Sign in</h1>
-
+    <h1 class="reg-headers">Sign in</h1>
+    <div class="reg-container">
+    <div class="sidebar">
     <nav>
-      <a href="/users">Back</a>
+      <a href="/users" class="close" tabindex="0" role="button">close</a>
   </nav>
-
+  <div class="registration">
     <form action="/users/signin" method="POST">
       <fieldset>
+        <legend>SIGN IN</legend>
         <label for="email">E-MAIL:</label>
-        <input type="email" name="email" autocomplete="off">
-      </fieldset>
-      <fieldset>
+        <input type="email" name="email" autocomplete="off" placeholder="E-MAIL"> <br>
         <label for="password">PASSWORD:</label>
-        <input type="password" name="password" autocomplete="off">
+        <input type="password" name="password" autocomplete="off" placeholder="PASSWORD">
       </fieldset>
-      <input type="submit" value="Sign in">
+      <input type="submit" value="SUMBIT">
+      <br>
+
     </form>
+    </div>
+  </div>
+  </div>
   </body>
 </html>
