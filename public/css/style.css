@@ -184,7 +184,9 @@ label {
   max-width: 100%;
 }
 input[type="submit"] {
-  width: 100%;
+  align-self: center;
+  margin-left: 120px;
+  width: 50%;
   height: 50px;
   background: var(--bright-orange);
   box-shadow: 2px 2px var(--light-green);
@@ -200,8 +202,10 @@ input[type="submit"]:hover {
     color: rgb(0, 0, 0);
     fill: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
-
-  
+}
+input[type="email"], input[type="password"]{
+  width: 98%;
+  height: 40px;
 }
 /* using resize none to make sure the textarea always stays a specific width/height */
 textarea {
@@ -236,12 +240,13 @@ textarea {
 
 }
 .registration {
-  width: 100%;
+  width: 96%;
   border-radius: 0 10px 10px 0;
   padding: 15px;
   box-sizing: border-box;
   overflow: auto;
   margin-left:-600px;
+  margin-top: 110px;
 
 }
 
