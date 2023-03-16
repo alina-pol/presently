@@ -6,10 +6,21 @@
     <title>Meditation</title>
 </head>
 <body>
-    <nav>
-        <a href="/meditations">Back to all Meditations</a>
-    </nav>
-    <h1><%=meditation.name %></h1>
+    <div id="show-page" class="index-page">
+        <div>
+            <nav id="navigation" class="site-navigation" role="navigation">
+                <ul class="menu">
+                    <li class="menu-item"><a class="dropdown" id="menu-lines" onclick="">&#9776;</a>
+                        <ul class="dropdown">
+                            <li><a class="menu-item" href="/meditations/">Meditations</a></li>
+                            <li><a class="menu-item" href="/meditations/about">About</a></li>
+                            <li><a class="menu-item" href="/meditations/new">Add new meditation</a></li>
+                            <li><a class="menu-item" href="/users/signout">Sign out</a></li>
+                        </ul>
+                </ul>
+            </nav>
+    <div id="show-container">
+            <h1 id="show-header"><%=meditation.name %></h1>
     <img src="<%= meditation.img %>"></a><br>
     <%=meditation.description %> <br>
     Duration: <%=meditation.duration %> min <br>
@@ -19,7 +30,7 @@
     <form action="/meditations/<%=meditation.id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete">
     </form>
-    
-
+</div>
+</div>
 </body>
 </html>
