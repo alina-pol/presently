@@ -1,51 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=IBM+Plex+Sans+Condensed:wght@100&display=swap');
-img{
-    box-shadow : 100ch;
-    border-radius: 10%;
-    box-shadow: 10px 15px 30px rgba(120, 119, 119, 0.3);
-    margin-bottom: 4%;
-    max-width: 100px;
-    max-height: 100px;
-}
+
 body{
     background-color: rgb(0, 0, 0);
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
-.container{
-    max-width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    text-align: center;
-    align-content: center;
-    margin-left: 8%;
-}
-li{
-    margin: 15px;
-}
-ul{
-    margin: 10% 15% 10% 15%;
-}
-#list{
-    background-color:rgb(229, 243, 184);
-    border-radius: 10%;
-    opacity: 90%;
-}
-h1{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: 300;
-    font-size: 110px
-    /* font-size: 6.9vw; */
 
-}
 a{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
+h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 300;
+  font-size: 110px
+  /* font-size: 6.9vw; */
 
+}
 .container-show{
     max-width: 40%;
     display: flex;
@@ -59,29 +30,7 @@ a{
     margin: 10% 25% 10% 25%;
 }
 
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  
-/* a setting for smartphones, so video is not displayed */
-@media (max-width: 750px) {
-    #background-video { display: none; }
-    body {
-      background: url("https://presentlyvideos.s3.us-east-2.amazonaws.com/leaves.jpeg") no-repeat;
-      background-size: cover;
-    }
-}
-
 /* buttons */
-
 a {
   align-items: center;
   background-color: rgb(0, 0, 0);
@@ -157,7 +106,26 @@ a:active {
   align-self: center;
   /* background-color: rgba(250, 250, 250, 0.4) */
 }
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 
+/* a setting for smartphones, so video is not displayed */
+/* @media (max-width: 750px) {
+  #background-video { display: none; }
+  body {
+    background: url("https://presentlyvideos.s3.us-east-2.amazonaws.com/leaves.jpeg") no-repeat;
+    background-size: cover;
+  }
+} */
 
 
 
@@ -165,17 +133,16 @@ a:active {
 
 fieldset {
   border: 1px solid #ccc;
-  /* border-radius: 5px; */
   padding: 20px;
   margin: 20px 0;
 }
 legend {
   padding: 0px 10px;
-  font-family: 'Oswald';
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: 500;
 }
 label {
-  font-family: 'Oswald';
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: 200;
   display: block;
   max-width: 100%;
@@ -187,7 +154,7 @@ input[type="submit"] {
   height: 50px;
   background: var(--bright-orange);
   box-shadow: 2px 2px var(--light-green);
-  font-family: 'Oswald';
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 1.3em;
   color: whitesmoke;
   border: 0px;
@@ -229,7 +196,6 @@ textarea {
   height: 45vw;
   margin: 50px auto;
   display: flex;
-  /* border-radius: 10px; */
   box-shadow: 1px 1px 10px #8c8c8c,
               -1px -1px 80px #333333,
               1px -1px 10px #8d8d8d,
@@ -246,7 +212,9 @@ textarea {
   margin-top: 110px;
 
 }
-
+#signup-form{
+  margin-top: 40px;
+}
 
 /* close button */
 .close {
@@ -292,4 +260,133 @@ textarea {
   background-size:100%;
   background-repeat: no-repeat;
   border-radius: 0 10px 10px 0;
+}
+
+/* index page dropdown menu */
+.site-navigation {
+  display: block;
+  font-size: 16px;
+  /* font-weight: bold; */
+  /* margin: -70px 1px 1px 4px; */
+
+}
+
+.site-navigation ul {
+  background: #f6f6f6;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.site-navigation li {
+  background: #ffffff;
+  display: block;
+  float: left;
+  margin: 0px;
+  padding: 12px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  
+.site-navigation li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.site-navigation li:hover {
+  transition: 0.2s;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.site-navigation ul li ul {
+  background: #fcfcfc;
+  visibility: hidden;
+  float: left;
+  min-width: 150px;
+  transition: visibility 0.65s ease-in;
+  margin-top:12px;
+  margin-left: -30px;
+  z-index: 99;
+}
+
+.site-navigation ul li:hover > ul,
+.site-navigation ul li ul:hover {
+   visibility: visible;
+}
+
+.site-navigation ul li ul li {
+  clear: both;
+  padding: 5px 0 5px 18px;
+  width: 100%;
+}
+
+.site-navigation ul li ul li:hover {
+  background: #ffffff;
+}
+
+#menu-lines{
+  background-color: white;
+  color:#000;
+  font-size: 50px;
+
+  
+}
+.menu-item{
+  text-align: center;
+}
+
+/* index page */
+#index-page{
+  background-color: rgb(255, 255, 255);
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  display: flex;
+  height: 115vw;
+
+
+}
+img{
+  box-shadow : 100ch;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.3);
+  margin-bottom: 4%;
+  max-width: 100px;
+  max-height: 100px;
+}
+.container{
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  align-content: center;
+  margin-left: 8%;
+}
+li{
+  margin: 15px;
+}
+ul{
+  margin: 10% 15% 10% 15%;
+}
+#list{
+  background-color:rgb(0, 0, 0);
+  opacity: 90%;
+}
+#index-header{
+  font-size: 80px;
+  margin-right: 150px;
+
+}
+#index-description{
+  font-size: 19px;
+  padding-right: 40px;
+  text-align: justify;
+}
+h5{
+  font-size: 25px;
+  text-align: center;
+
 }

@@ -5,12 +5,21 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Presently</title>
 </head>
-<body>
-    <nav>
-        <a href="/meditations/new">Add a new meditation</a> <br><br>
-        <a href="/users/signout">Signout</a>
+<body id="index-page">
+    <div>
+    <nav id="navigation" class="site-navigation" role="navigation">
+        <ul class="menu">
+            <li class="menu-item"><a class="dropdown" id="menu-lines" onclick="">&#9776;</a>
+                <ul class="dropdown">
+                    <li><a class="menu-item" href="/meditations/about">About</a></li>
+                    <li><a class="menu-item" href="/meditations/new">Add new meditation</a></li>
+                    <li><a class="menu-item" href="/users/signout">Sign out</a></li>
+                </ul>
+        </ul>
     </nav>
-    <h1>Meditations</h1>
+
+    <h1 id="index-header">Relax and Renew</h1>
+    <h6 id="index-description">Take a moment to breathe deeply and let go of any tension in your body. This is a space for you to unwind, relax, and renew your energy. <br>Our "Relax and Renew" section offers a variety of guided meditations and exercises designed to help you find that inner peace, release the worries of the day, and awaken a renewed sense of energy and vitality within you. </h6><h5>Take a deep breath, relax, and let the journey begin...</h5>
  
     <ul>
         
@@ -25,6 +34,7 @@
             </li>
             <% } %>
         </div>
-        </ul>
+        </ul> 
+    </div>
 </body>
 </html>
