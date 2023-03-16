@@ -6,20 +6,30 @@
   </head>
   <body>
 
-    <h1>Edit Meditation Page</h1>
-
-    <nav>
-        <a href="/meditations/<%=meditation.id%>">Back to the <%=meditation.name%></a>
+    <div class="new-container">
+    <h1 id="new-header">Edit Your Way to Inner Peace</h1>
+    <div class="sidebar">
+      <nav>
+        <a href="/meditations" class="close" tabindex="0" role="button">close</a>
     </nav>
-    <br><br><br>
-    <form action="/meditations/<%=meditation.id%>?_method=PUT" method="POST">
-        Name: <input type="text" name="name" value="<%=meditation.name %>"/><br/>
-        Description: <input type="text" name="description" value="<%=meditation.description %>"/><br/>
-        Img: <input type="url" name="img" value="<%=meditation.img %>" /><br/>
-        Duration: <input type="number" name="duration" value="<%=meditation.duration%>" /><br/>
+    <div class="new">
+      <form action="/meditations/<%=meditation.id%>?_method=PUT" method="POST">
+      <fieldset>
+        <legend>It's time to change</legend>
+        <br>
+        <label for="name">NAME:</label><br>
+        <input type="text" name="name" value="<%=meditation.name %>"/><br><br>
+        <label for="name">DESCRIPTION:</label><br>
+        <input type="text" name="description" value="<%=meditation.description %>"/><br><br>
+        <label for="name">IMAGE:</label><br>
+        <input type="url" name="img" value="<%=meditation.img %>" /><br><br>
+        <label for="name">DURATION:</label><br>
+        <input type="number" name="duration" value="<%=meditation.duration%>" /><br><br>
         <input type="submit" value="Submit"/>
+      </fieldset>
     </form>
-
-     <br/>
+</div>
+</div>
+</div>
   </body>
 </html>

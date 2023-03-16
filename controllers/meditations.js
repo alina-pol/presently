@@ -73,7 +73,7 @@ router.get("/:id", (req, res) => {
 
 
 
-router.delete('/:id', authRequired, (req, res) => {
+router.delete('/:id', (req, res) => {
 	Meditation.findByIdAndDelete(req.params.id, (err, deletedMeditation) => {
 		if(err) {
 			console.log(err)
@@ -87,7 +87,7 @@ router.delete('/:id', authRequired, (req, res) => {
 
 
 // edit
-router.get("/:id/edit", authRequired, (req, res) => {
+router.get("/:id/edit", (req, res) => {
 	Meditation.findById(req.params.id, (err, foundMeditation) => {
 		if(err) {
 			console.log(err)
