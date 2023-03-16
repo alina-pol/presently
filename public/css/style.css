@@ -345,7 +345,7 @@ textarea {
 }
 
 /* index page */
-#index-page{
+.index-page{
   background-color: rgb(255, 255, 255);
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   display: flex;
@@ -353,11 +353,11 @@ textarea {
 
 
 }
-img{
+/* img{
   margin-bottom: 4%;
   max-width: 400px;
   max-height: 400px;
-}
+} */
 .container{
   max-width: 100%;
   max-height: 100%;
@@ -383,6 +383,7 @@ ul{
 #index-header{
   font-size: 80px;
   margin-right: 200px;
+  color:#000;
 
 }
 #index-description{
@@ -415,4 +416,28 @@ input[type="text"], input[type="url"], input[type="number"]{
   font-size: 15px;
 
 }
+.about-description{
+  font-size: 19px;
+  padding-right: 40px;
+  text-align: justify;
+  padding: 10px 50px 30px 250px;
+  margin-right:100px;
 
+}
+#about-header{
+  color:#fff;
+}
+
+
+#about-page{
+  margin-right:100px;
+  color: #fff;
+  background-color: #000;
+}
+
+#imginthefooter img {
+  width: 100%;
+  max-height: 800px;
+  margin-left: 50px;
+  z-index: -1;
+}

@@ -21,6 +21,10 @@ router.get("/new", (req,res) => {
     res.render("new.ejs")
 })
 
+// about
+router.get("/about", (req,res) => {
+    res.render("about.ejs")
+})
 
 
 // create
