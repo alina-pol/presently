@@ -27,14 +27,12 @@
         <% for(let i=0; i < meditations.length; i++) { %>
             <div id="list">
             <li>
-                <%=meditations[i].name; %>
-                <br><br>
+                <%=meditations[i].name; %>            
                 <a href="/meditations/<%=meditations[i].id; %>"><img src="<%= meditations[i].img%>"></a>
-            </div>
             </li>
+        </div>
             <% } %>
         </div>
         </ul> 
-    </div>
 </body>
 </html>
