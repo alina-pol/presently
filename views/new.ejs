@@ -6,15 +6,30 @@
 </head>
 <body>
     
-    <h1>New Meditation Page</h1>
-
+    <div class="new-container">
+    <h1 id="new-header">Create Your Zen</h1>
+    <div class="sidebar">
+    <nav>
+         <a href="/meditations" class="close" tabindex="0" role="button">close</a>
+     </nav>
+     <div class="new">
     <form action="/meditations" method="POST">
-        Name: <input type="text" name="name" autocomplete="off"/><br/>
-        Description: <input type="text" name="description" autocomplete="off"/><br/>
-        Img: <input type="url" name="img" autocomplete="off"/><br/>
-        Duration: <input type="number" name="duration" autocomplete="off"/><br/>
-        <input type="submit" value="Create"/>
+        <fieldset>
+            <legend>Make it your own</legend>
+            <br>
+            <label for="name">NAME:</label><br>
+             <input type="text" name="name" autocomplete="off" placeholder="NAME YOUR MEDITATION" required="true"/><br><br>
+            <label for="name">DESCRIPTION:</label><br>
+            <input type="text" name="description" autocomplete="off" placeholder="ADD DESCRIPTION" required="true"/><br><br>
+            <label for="name">IMAGE:</label><br>
+            <input type="url" name="img" autocomplete="off" placeholder="ADD IMAGE URL" required="true"/><br><br>
+            <label for="name">DURATION:</label><br>
+            <input type="number" name="duration" autocomplete="off" placeholder="APPROXIMATE DURATION IN MINUTES"/><br/><br><br>
+            <input type="submit" value="Create"/>
+    </fieldset>
     </form>
-
+</div>
+</div>
+</div>
 </body>
 </html>

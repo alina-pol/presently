@@ -140,6 +140,7 @@ legend {
   padding: 0px 10px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: 500;
+  color: #fff;
 }
 label {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -170,6 +171,10 @@ input[type="submit"]:hover {
 input[type="email"], input[type="password"], input[type="text"]{
   width: 98%;
   height: 40px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+
 }
 /* using resize none to make sure the textarea always stays a specific width/height */
 textarea {
@@ -202,7 +207,7 @@ textarea {
               -1px 1px 10px #4c4c4c;
 
 }
-.registration {
+.registration, .new{
   width: 550px;
   border-radius: 0 10px 10px 0;
   padding: 15px;
@@ -390,3 +395,24 @@ h5{
   text-align: center;
 
 }
+
+/* New page */
+#new-header{
+  color: white;
+  font-size: 80px;
+}
+.new{
+  display:flex;
+  justify-content: center;
+  color: #fff;
+  margin: 0 10px 10px -190px; 
+  position: absolute;
+}
+input[type="text"], input[type="url"], input[type="number"]{
+  width: 450px;
+  height: 40px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 15px;
+
+}
+
