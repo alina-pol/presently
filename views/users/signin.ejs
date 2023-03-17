@@ -12,14 +12,17 @@
     <nav>
       <a href="/users" class="close" tabindex="0" role="button">close</a>
   </nav>
-  <div class="registration">
+  <div class="registration" id="signin-form">
     <form action="/users/signin" method="POST">
       <fieldset>
         <legend>SIGN IN</legend>
         <br>
           <!-- user name -->
         <label for="text">USER NAME:</label><br>
-        <input type="text" name="username" autocomplete="off" placeholder="USER NAME" required="true"> <br><br>
+        <input type="username" name="username" autocomplete="off" placeholder="USER NAME" required="true"> <br><br>
+            <!-- email -->
+            <label for="email">E-MAIL:</label><br>
+            <input type="email" name="email" autocomplete="off" placeholder="E-MAIL"><br><br>       
         <!-- password -->
         <label for="password">PASSWORD:</label><br>
         <input type="password" name="password" autocomplete="off" placeholder="PASSWORD" required="true"><br><br><br><br>

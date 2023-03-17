@@ -157,8 +157,8 @@ input[type="submit"]:hover {
     fill: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
 }
-input[type="text"], input[type="email"], input[type="password"]{
-  width: 98%;
+input[type="text"], input[type="email"], input[type="password"], input[type="username"]{
+  width: 470px;
   height: 40px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 15px;
@@ -208,7 +208,10 @@ textarea {
 
 }
 #signup-form{
-  margin-top: 40px;
+  margin-top: 4%;
+}
+#signin-form{
+  margin-top: 4%;
 }
 
 /* close button */
