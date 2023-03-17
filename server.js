@@ -19,14 +19,15 @@ app.use(session({
 	saveUninitialized: false 
 }))
 
+// Database Connection
+mongoose.connect(process.env.DATABASE_URL);
+
 // Mongo error/success
 const db = mongoose.connection
 db.on('error', (err) => console.log(`${err.message} MongoDB Not Running!`))
 db.on('connected', () => console.log('mongo connected'))
 db.on('disconnected', () => console.log('mongo disconnected'))
 
-// Database Connection
-mongoose.connect(process.env.DATABASE_URL);
 
 // This adds data to req.body so we can access it in the CREATE action
 app.use(express.json());

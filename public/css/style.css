@@ -157,7 +157,7 @@ input[type="submit"]:hover {
     fill: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
 }
-input[type="email"], input[type="password"], input[type="text"]{
+input[type="text"], input[type="email"], input[type="password"]{
   width: 98%;
   height: 40px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;

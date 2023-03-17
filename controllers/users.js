@@ -17,7 +17,7 @@ router.post('/register', (req, res) => {
 	const salt = bcrypt.genSaltSync(10)
 
 	req.body.password = bcrypt.hashSync(req.body.password, salt)
-	console.log(req.body)
+	
 
 	// first lets see if somebody else already has this username 
 	User.findOne({username: req.body.username}, (err, userExists) => {
