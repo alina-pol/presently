@@ -104,7 +104,6 @@ a:active {
 #welcome-page{
   display: flex;
   align-self: center;
-  /* background-color: rgba(250, 250, 250, 0.4) */
 }
 #background-video {
   width: 100vw;
@@ -117,16 +116,6 @@ a:active {
   bottom: 0;
   z-index: -1;
 }
-
-/* a setting for smartphones, so video is not displayed */
-/* @media (max-width: 750px) {
-  #background-video { display: none; }
-  body {
-    background: url("https://presentlyvideos.s3.us-east-2.amazonaws.com/leaves.jpeg") no-repeat;
-    background-size: cover;
-  }
-} */
-
 
 
 /* sign in & register pages */
@@ -251,6 +240,7 @@ textarea {
 .close:after {
     width: 1px;
 }
+
 /* images on sign in & sign up pages */
 
 .sidebar {

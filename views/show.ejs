@@ -6,31 +6,20 @@
     <title>Meditation</title>
 </head>
 <body>
-    <div id="show-page" class="index-page">
-        <div>
-            <nav id="navigation" class="site-navigation" role="navigation">
-                <ul class="menu">
-                    <li class="menu-item"><a class="dropdown" id="menu-lines" onclick="">&#9776;</a>
-                        <ul class="dropdown">
-                            <li><a class="menu-item" href="/meditations/">Meditations</a></li>
-                            <li><a class="menu-item" href="/meditations/about">About</a></li>
-                            <li><a class="menu-item" href="/meditations/new">Add new meditation</a></li>
-                            <li><a class="menu-item" href="/users/signout">Sign out</a></li>
-                        </ul>
-                </ul>
+    <div id="show-page">
+            <nav>
+                <a href="/meditations" class="close" tabindex="0" role="button">close</a>
             </nav>
     <div id="show-container">
-            <h1 id="show-header"><%=meditation.name %></h1>
-    <img src="<%= meditation.img %>"></a><br>
-    <%=meditation.description %> <br>
-    Duration: <%=meditation.duration %> min <br>
-
-    <a href="/meditations/<%=meditation.id %>/edit">Edit</a> <br><br><br>
-
-    <form action="/meditations/<%=meditation.id%>?_method=DELETE" method="POST">
+     <form action="/meditations/<%=meditation.id%>?_method=DELETE" method="POST">
+         <h1 id="show-header"><%=meditation.name %></h1>
+         <h5><%=meditation.description %> <br><br>
+        Duration: <%=meditation.duration %> min <br></h5>
+        <img src="<%= meditation.img %>"></a><br>
+        <a href="/meditations/<%=meditation.id %>/edit">Edit</a> <br><br><br>
         <input type="submit" value="Delete">
     </form>
-</div>
+    </div>
 </div>
 </body>
 </html>
