@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=IBM+Plex+Sans+Condensed:wght@100&display=swap');
 body{
-    width: 100vw;
-    height: 85vh;
+    width: 95vw;
+    height: 100vh;
 }
 h1{
     text-align: center;
@@ -81,7 +81,8 @@ h1{
     background-color: white;
     color:#000;
     font-size: 50px;
-  
+    margin-top: -7px;
+    
     
   }
   .menu-item{
@@ -89,7 +90,7 @@ h1{
   }
   
   /* buttons */
-a {
+  .menu-item {
     align-items: center;
     background-color: rgb(0, 0, 0);
     border: 2px solid #000000;
@@ -116,18 +117,18 @@ a {
     touch-action: manipulation;
   }
   
-  a:focus {
+  .menu-item:focus {
     color: #171e29;
   }
   
-  a:hover {
+  .menu-item:hover {
     border-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     fill: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
   }
   
-  a:active {
+  .menu-item:active {
     border-color:rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     fill: rgb(0, 0, 0);
@@ -136,34 +137,34 @@ a {
   img{
     width: 1400px;
     height: 1400px;
+    background: none;
+  }
+  a:hover{
+    opacity: 50%;
   }
 
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) {
     a {
       min-width: 170px;
     }
-  } */
+  }
   
 /* index page */
 .index-page{
     background-color: rgb(255, 255, 255);
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     display: flex;
-    margin-right: 400px;
+    text-align: justify;
 
-  
-  
   }
   
   .container{
     max-width: 100%;
     max-height: 100%;
-    margin-left: -200px;
-    gap: 30px;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     grid-auto-rows: minmax(100px, auto);
     
   }
@@ -171,31 +172,34 @@ a {
     max-width: 400px;
     max-height: 400px;
   }
-  li{
-    margin: 15px;
-  }
-  ul{
-    margin: 10% 15% 10% 15%;
-  }
   #list{
-    /* background-color:rgb(0, 0, 0); */
-    opacity: 90%;
+   list-style: none;
+   /* background-color: rgba(206, 206, 206, 0.1) */
   }
   #index-header{
     font-size: 80px;
-    margin-right: 200px;
     color:#000;
   
   }
   #index-description{
     font-size: 19px;
-    padding-right: 40px;
+    padding: 10px;
     text-align: justify;
   }
   h5{
     font-size: 25px;
     text-align: center;
     padding-bottom: 40px;
+    margin-left: 4%;
+    margin-right: 4%;
   
   }
- 
+  h4{
+    font-size: 23px;
+    margin-bottom: 2px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
+ #index-cont{
+    margin-left: 4%;
+    margin-right: 4%;
+ }

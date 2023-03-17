@@ -19,6 +19,7 @@
     </nav>
 
     <h1 id="index-header">Relax and Renew</h1>
+    <div id="index-cont">
     <h6 id="index-description">Take a moment to breathe deeply and let go of any tension in your body. This is a space for you to unwind, relax, and renew your energy. <br>Our "Relax and Renew" section offers a variety of guided meditations and exercises designed to help you find that inner peace, release the worries of the day, and awaken a renewed sense of energy and vitality within you. </h6><h5>Take a deep breath, relax, and let the journey begin...</h5>
  
     <ul>
@@ -27,12 +28,13 @@
         <% for(let i=0; i < meditations.length; i++) { %>
             <div id="list">
             <li id="index-images">
-                <%=meditations[i].name; %>            
+                <h4><%=meditations[i].name; %></h4>           
                 <a id="images-links" href="/meditations/<%=meditations[i].id; %>"><img src="<%= meditations[i].img%>"></a>
             </li>
         </div>
             <% } %>
         </div>
         </ul> 
+    </div>
 </body>
 </html>
