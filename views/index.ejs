@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Presently</title>
 </head>
 <body class="index-page">
@@ -26,9 +26,9 @@
         <div class="container">
         <% for(let i=0; i < meditations.length; i++) { %>
             <div id="list">
-            <li>
+            <li id="index-images">
                 <%=meditations[i].name; %>            
-                <a href="/meditations/<%=meditations[i].id; %>"><img src="<%= meditations[i].img%>"></a>
+                <a id="images-links" href="/meditations/<%=meditations[i].id; %>"><img src="<%= meditations[i].img%>"></a>
             </li>
         </div>
             <% } %>
