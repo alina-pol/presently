@@ -383,3 +383,7 @@ input[type="text"], input[type="url"], input[type="number"]{
   z-index: -1;
 }
 
+.new-form{
+  align-items: center;
+  margin-left: 45%;
+}
