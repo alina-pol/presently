@@ -55,7 +55,6 @@ router.post('/signin', (req, res) => {
 })
 
 // destroy session route
-
 router.get('/signout', (req, res) => {
     //this will destroy the session
     req.session.destroy

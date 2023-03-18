@@ -261,6 +261,7 @@ textarea {
   border-radius: 0 10px 10px 0;
 }
 
+
 /* index page dropdown menu */
 .site-navigation {
   display: block;
@@ -350,6 +351,12 @@ textarea {
   margin: 0 10px 10px -190px; 
   position: absolute;
 }
+@media screen and (min-width: 1700px) {
+  .new {
+    margin-left: -180px;
+  }
+}
+
 input[type="text"], input[type="url"], input[type="number"]{
   width: 450px;
   height: 40px;

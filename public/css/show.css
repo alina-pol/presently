@@ -9,7 +9,19 @@ body{
 img{
     max-width: 800px;
     max-height: 800px;
+    align-items: center;
     margin-left: 18%;
+  }
+
+  @media screen and (min-width: 1600px) {
+    img {
+      margin-left: 22%;
+    }
+  }
+  @media screen and (min-width: 1700px) {
+    img {
+      margin-left: 27%;
+    }
   }
 h1{
     text-align: center;
