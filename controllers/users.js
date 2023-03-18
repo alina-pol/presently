@@ -39,7 +39,7 @@ router.get('/signin', (req, res) => {
 
 router.post('/signin', (req, res) => {
 	// we need to get the user with that username 
-	User.findOne({username: req.body.username}, (err, foundUser) => {
+	User.findOne({email: req.body.email}, (err, foundUser) => {
 		if(foundUser) {
 			const validLogin = bcrypt.compareSync(req.body.password, foundUser.password)
 			if(validLogin) {
