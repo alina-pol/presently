@@ -1,6 +1,6 @@
 # PRESENTLY
 
-#### A full CRUD web application that serves as an inspiration guide to explore different type of meditations.
+#### A full CRUD web application that serves as an inspiration guide to explore different types of meditations.
 <img width="1440" alt="welcome" src="https://user-images.githubusercontent.com/116773111/226077055-385da7c9-2f36-443a-bd83-9dca5017a31f.png">
 
 ![signup](https://user-images.githubusercontent.com/116773111/226077392-3272e81c-1932-4ae0-84a1-b58f6f83689e.png)
