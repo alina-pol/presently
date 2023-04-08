@@ -59,6 +59,7 @@ PRESENTLY is a meditation app that offers a personalized and customizable collec
 ## <a name="deployment"></a>Deployed Link
 
 
+* Deplyed link: * https://presently.herokuapp.com/users
 * You can view the repository:
 [Github.com](https://github.com/alina-pol/presently)
 * If unable to view please go live locally through VS Code
