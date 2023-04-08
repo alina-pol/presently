@@ -57,7 +57,7 @@ PRESENTLY is a meditation app that offers a personalized and customizable collec
 * Users will be able to access nutrition tips and healthy recepies
 
 ## <a name="deployment"></a>Deployed Link
-* N/A
+
 
 * You can view the repository:
 [Github.com](https://github.com/alina-pol/presently)
