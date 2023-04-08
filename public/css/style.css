@@ -76,7 +76,7 @@ a:active {
 }
 
 @media (min-width: 768px) {
-  .button-59 {
+  .button {
     min-width: 170px;
   }
 }
