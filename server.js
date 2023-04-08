@@ -20,7 +20,7 @@ app.use(session({
 }))
 
 // Database Connection
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(process.env.DATABASE_URI);
 
 // Mongo error/success
 const db = mongoose.connection
